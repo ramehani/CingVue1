@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/cControllers.js"></script>
+
+<style>
+.mainhead{
+	float:left;
+	width:75px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+.subhead{
+	float:left;
+	width:75px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+</style>
+</head>
+<body>
+<script>
+	jQuery(document).ready(function(){
+		DisplayResults();					   
+	});
+</script>
+<div>
+<div>
+	<div class="headerRow">
+        <div class="mainhead" style="width:200px !important">School</div>
+        <div class="mainhead">Y3</div>
+        <div class="mainhead">Y5</div>
+        <div class="mainhead">Y7</div>
+        <div class="mainhead">Y9</div>
+        <div class="mainhead">Raw Gain Y3 to Y5</div>
+        <div class="mainhead">Factored Gain Y3 to Y5</div>
+		<div class="mainhead">CLG% Y3 to Y5</div>                               
+        <div class="mainhead">Gain in Gain Y3 to Y5</div>                               
+    </div>
+    <div class="displayrow">
+    	<div id="appendResults">
+        </div>
+    </div>
+</div>
+<div style="float:right;vertical-align:top">
+	<select name="filterh" onChange="CallFilters(this.value)">
+    	<option value="Grammer & Puntuation">Grammer & Puntuation</option>
+        <option value="numeracy">Numeracy</option>
+        <option value="Pursuasive Writing">Pursuasive Writing</option>
+        <option value="reading">Reading</option>
+        <option value="spelling">Spelling</option>
+    </select>
+</div>
+</div>
+</body>
+</html>
